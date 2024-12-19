@@ -1,11 +1,11 @@
 ---
 title: "My Document"
-author: "Deden Istiawan-Institut Teknologi Statistika dan Bisnis Muhammadiyah"
+author: "Deden Istiawan - Institut Teknologi Statistika dan Bisnis Muhammadiyah"
 date: "`r Sys.Date()`"
 output: 
   html_document:
     theme: flatly
-    higlight: zenburn
+    highlight: zenburn
     toc: true
     toc_float:
       collapsed: true
@@ -15,9 +15,70 @@ bibliography: references.bib
 
 ```{=html}
 <style>
-body{
-text-align: justify}
+/* Memberikan latar belakang yang lembut */
+body {
+    background-color: #f8f9fa; /* Warna abu muda */
+    text-align: justify;
+    font-family: 'Arial', sans-serif; /* Font modern */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Styling judul utama */
+h1, h2, h3 {
+    color: #2c3e50; /* Warna biru tua */
+    font-family: 'Georgia', serif;
+}
+
+/* Tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    text-align: center;
+}
+
+/* Code block */
+pre, code {
+    background-color: #f5f5f5; /* Warna abu-abu terang */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+/* Tombol TOC mengapung */
+#toc {
+    background-color: #ffffff; /* Warna putih */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #3498db; /* Warna biru */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1abc9c; /* Warna hijau */
+    text-decoration: underline;
+}
 </style>
+
+
 ```
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
