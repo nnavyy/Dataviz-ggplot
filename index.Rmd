@@ -1,5 +1,5 @@
 ---
-title: "My Document"
+title: "Visualisasi Data dengan GGPLOT"
 author: "Nanda Zhafran Mahendra-Institut Teknologi Statistika dan Bisnis Muhammadiyah"
 date: "`r Sys.Date()`"
 output: 
@@ -33,6 +33,11 @@ When you click the **Knit** button a document will be generated that includes bo
 ```{r}
 print ("Hello Wordl")
 ```
+
+# Pengantar ggplot2
+
+## Introduction ggplot
+
 ```{r}
 library(readr)
 iris_iris <- read_csv("iris - iris.csv")
@@ -45,7 +50,7 @@ View(iris_iris)
 summary(cars)
 ```
 
-## Including Plots
+## Dasar-dasar materi ggplot
 
 ```{r}
 library(ggplot2) 
@@ -72,8 +77,7 @@ ggplot(data, aes(x = x, y = y, color = grup)) +
   theme_minimal() +
   labs(color = "Grup")
 ```
-
-
+## Read Data
 
 ```{r}
 setwd("C:/Users/ACER/OneDrive/Documents/Dataviz-ggplot")
@@ -83,10 +87,15 @@ print(data)
 ```
 
 ```{r}
+setwd("C:/Users/ACER/OneDrive/Documents/Dataviz-ggplot")
+data <- read.csv("lizards.csv")
+lizards <- read.csv("C:/Users/ACER/OneDrive/Documents/Dataviz-ggplot/lizards.csv")
+str(lizards)
 library(ggplot2)
 ggplot(lizards, aes(x=total_length,y=weight))+geom_point()
 labs(title = "plot titik", x="sumbu x", y="sumbu y")+theme_classic()
 ```
+
 
 
 You can also embed plots, for example:
